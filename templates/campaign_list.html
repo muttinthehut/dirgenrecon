@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>Campaign List</title>
+</head>
+<body>
+    <div>
+        <h1><a href="/">CID Tracker</a></h1>
+    </div>
+
+    {% for marketingcampaign in marketingcampaigns %}
+        <div>
+            <p>channel:  {{marketingcampaign.channel}} </p>
+            <h1><a href=''>{{marketingcampaign.campaign}}</a></h1>
+    {% endfor %}
+	
+</body>

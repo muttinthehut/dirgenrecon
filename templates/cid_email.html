@@ -1,0 +1,108 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html><head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  </head>
+  <body style="background: #ffffff; padding-top: 20px; padding-bottom: 60px;">
+
+    <table style="background: #ffffff; border: 6px solid #E1173E; width: 520px; margin: 0 auto; padding: 30px;" align="center" border="0" cellpadding="0" cellspacing="0">
+      <tbody><tr>
+        <td colspan="3" align="center">
+          
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3" style="padding-top: 10px; padding-bottom: 28px;">
+          <h2 style="color: #363636; font-family: 'Helvetica Neue', Helvetica, sans-serif; font-weight: bold; font-size: 21px;">Campaign Identifier Notification</h2>
+          
+          <div style="margin-top: 30px;">
+<p style="color: #363636; font-family: 'Helvetica Neue', Helvetica, sans-serif; font-size: 16px; line-height: 26px;">
+          The following campaign identifier has been created.  Please review and approve for use.
+          </p>
+          </div>
+
+		  {% block cid %}
+		<table style="font-family:Arial;color:#e5e5e5;size:10px;text-align:left;padding-left:10px;padding-right:10px;" >
+        <tr>
+            <th><font style="color:#000000;font-size:12px">Channel&nbsp;&nbsp;: </font></th>
+            <td><font style="color:#000000;font-size:12px">Channel Code Here&nbsp;-&nbsp;</font></td>
+			<td><font style="color:#000000;font-size:12px">Channel Descr Here</font></td>
+        </tr>
+
+        <tr>
+            <th><font style="color:#000000;font-size:12px">Type&nbsp;&nbsp;: </font></th>
+            <td><font style="color:#000000;font-size:12px">Type Code Here&nbsp;-&nbsp;</font></td>
+			<td><font style="color:#000000;font-size:12px">Type Descr Here</font></td>
+        </tr>
+		
+        <tr>
+            <th><font style="color:#000000;font-size:12px">Creative&nbsp&nbsp: </font></th>
+            <td><font style="color:#000000;font-size:12px">Creative Code Here&nbsp;-&nbsp;</font></td>
+			<td><font style="color:#000000;font-size:12px">Creative Descr Here</font></td>
+        </tr>
+
+	    <tr>
+            <th><font style="color:#000000;font-size:12px">Targeting&nbsp&nbsp: </font></th>
+            <td><font style="color:#000000;font-size:12px">Targeting Code Here&nbsp;-&nbsp;</font></td>
+			<td><font style="color:#000000;font-size:12px">Targeting Descr Here</font></td>
+        </tr>
+		
+		<tr>
+            <th><font style="color:#000000;font-size:12px">Ad Network&nbsp&nbsp: </font></th>
+            <td><font style="color:#000000;font-size:12px">Ad Code Here&nbsp;-&nbsp;</font></td>
+			<td><font style="color:#000000;font-size:12px">Ad Descr Here</font></td>
+        </tr>
+
+		<tr>
+            <th><font style="color:#000000;font-size:12px">Geo &nbsp&nbsp: </font></th>
+            <td><font style="color:#000000;font-size:12px">Geo Code Here&nbsp;-&nbsp;</font></td>
+			<td><font style="color:#000000;font-size:12px">Geo Descr Here</font></td>
+        </tr>
+		
+		</table>
+
+		<table style="font-family:Arial;color:#e5e5e5;size:10px;text-align:left;padding-left:10px;padding-right:10px;" >
+			<tr style="background:{% cycle ' #efefef' '#ffffff' %}">
+				<th><font style="color:#000000;font-size:12px">Campaign Code: </font></th>
+				<td><font style="color:#000000;font-size:12px">Campaign Code Code </font></td>
+            </tr>
+			<tr>
+			
+			<tr style="background:{% cycle ' #efefef' '#ffffff' %}">
+				<th><font style="color:#000000;font-size:12px">Landing Page: </font></th>
+				<td><font style="color:#000000;font-size:12px">Campaign Code Code </font></td>
+            </tr>
+ 
+        </table>
+
+		{% endblock %}
+		
+          <div style="margin-top: 30px;">
+<p style="color: #363636; font-family: 'Helvetica Neue', Helvetica, sans-serif; font-size: 16px; line-height: 26px;">
+          To view more details, visit the campaign identifier site by clicking the link below.
+          </p>
+		  <table>
+		     <tr>
+			 <td>
+            <a href="http://127.0.0.1:8000/admin" style="font-family: 'Helvetica Neue', Helvetica, sans-serif; font-size: 16px; font-weight: bold; text-align: center; text-decoration: none; background: #ffffff; border: 2px solid #bbbbbb; color: #363636; display: inline-block; border-radius: 2px; width: 100%; padding: 16px 8px; ">
+              Go To Campaign Identifier Tracking Tool
+            </a>
+			</td>
+			</tr>
+		  </table> 
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3" style="font-family: 'Helvetica Neue', Helvetica, sans-serif; font-size: 16px; line-height: 26px; padding-top: 28px; padding-bottom: 28px; ">
+        </td>
+      </tr>
+      <tr>
+
+      </tr>
+    </tbody></table>
+
+  <img src="daily_hitlist_files/open.gif" height="1" width="1">
+
+</body></html>

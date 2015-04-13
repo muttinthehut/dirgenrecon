@@ -1,0 +1,84 @@
+
+
+{% extends 'cid_email.html' %}
+
+
+
+{% block cid %} 
+
+	<table style="font-family:Arial;color:#e5e5e5;size:10px;text-align:left;padding-left:10px;padding-right:10px;" >
+        <tr>
+            <th><font style="color:#000000;font-size:12px">Channel&nbsp;&nbsp;: </font></th>
+            <td><font style="color:#000000;font-size:12px">{{cid.channel.channel_code}}</font></td>
+			<td><font style="color:#000000;font-size:12px">{{cid.channel.channel_description}}</font></td>
+        </tr>
+
+        <tr>
+            <th><font style="color:#000000;font-size:12px">Type&nbsp;&nbsp;: </font></th>
+            <td><font style="color:#000000;font-size:12px">{{cid.type.type_code}}</font></td>
+			<td><font style="color:#000000;font-size:12px">{{cid.type.type_description}}</font></td>
+        </tr>
+		
+        <tr>
+            <th><font style="color:#000000;font-size:12px">Creative&nbsp&nbsp: </font></th>
+            <td><font style="color:#000000;font-size:12px">{{cid.creative.creative_code}}</font></td>
+			<td><font style="color:#000000;font-size:12px">{{cid.creative.creative_description}}</font></td>
+        </tr>
+		
+		<tr>
+            <th><font style="color:#000000;font-size:12px">Placement &nbsp&nbsp: </font></th>
+            <td><font style="color:#000000;font-size:12px">{{cid.placement.placement_code}}</font></td>
+			<td><font style="color:#000000;font-size:12px">{{cid.placement.placement_description}}</font></td>
+        </tr>
+		
+		<tr>
+            <th><font style="color:#000000;font-size:12px">Group &nbsp&nbsp: </font></th>
+            <td><font style="color:#000000;font-size:12px">{{cid.group.adgroup_code}}</font></td>
+			<td><font style="color:#000000;font-size:12px">{{cid.group.adgroup_description}}</font></td>
+        </tr>
+
+	    <tr>
+            <th><font style="color:#000000;font-size:12px">Targeting&nbsp&nbsp: </font></th>
+            <td><font style="color:#000000;font-size:12px">{{cid.targeting.targeting_code}}</font></td>
+			<td><font style="color:#000000;font-size:12px">{{cid.targeting.targeting_description}}</font></td>
+        </tr>
+		
+		<tr>
+            <th><font style="color:#000000;font-size:12px">Ad Network&nbsp&nbsp: </font></th>
+            <td><font style="color:#000000;font-size:12px">{{cid.adnetwork.network_code}}</font></td>
+			<td><font style="color:#000000;font-size:12px">{{cid.adnetwork.network_description}}</font></td>
+        </tr>
+
+		<tr>
+            <th><font style="color:#000000;font-size:12px">Geo &nbsp&nbsp: </font></th>
+            <td><font style="color:#000000;font-size:12px">{{cid.geo.geo_code}}</font></td>
+			<td><font style="color:#000000;font-size:12px">{{cid.geo.geo_description}}</font></td>
+        </tr>
+		
+
+		
+		</table>
+
+		<br>
+		
+		<table style="font-family:Arial;color:#e5e5e5;size:10px;text-align:left;padding-left:10px;padding-right:10px;" >
+			<tr style="background:#efefef">
+				<th align="left"><font style="color:#000000;font-size:12px">Campaign Code: </font></th>
+				<td align="left"><font style="color:#000000;font-size:12px">{{cid.trackingcode}} </font></td>
+			</tr>
+			<tr style="border-top: 1px solid #cccccc"">
+			
+			</tr>
+			
+			<tr style="background:#efefef">
+				<th align="left"><font style="color:#000000;font-size:12px">Landing Page:</font></th>
+				<td align="left"><font style="color:#000000;font-size:12px"> {{"http://"|add:cid.landingpage|add:"?cid="|add:cid.trackingcode}}</font></td>
+
+            </tr>
+ 
+        </table>
+	   
+
+{% endblock %}
+
+
