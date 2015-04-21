@@ -1,0 +1,1 @@
+web: gunicorn dirgenrecon.wsgi --log-file -
